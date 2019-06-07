@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorDarkBlue"
+              tools:context=".view.AddBlocksActivity"
+>
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="425dp"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.ActionBarTheme"
+            android:layout="@menu/new_menu"
+    />
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTextConf"
+            android:text="Configura il blocco Instagram"
+            android:textColor="@color/colorLightGrey"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+
+    />
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleInsTextConf"
+            android:text="Inserisci il testo da dire ad Alexa"
+            android:textColor="@color/colorLightGrey"
+            android:layout_gravity="left"
+            android:layout_marginBottom="10dp"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textBlockConf"
+            android:textColor="@color/colorLightGrey"
+    />
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textBlockbtnSalvab"
+            android:background="@drawable/borderradius"
+            android:text="Salva e configura un altro blocco"
+            android:textColor="@color/colorDarkBlue"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textBlockbtnSalvaw"
+            android:background="@drawable/borderradius"
+            android:text="Salva workflow"
+            android:textColor="@color/colorDarkBlue"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textBlockbtnAnnulla"
+            android:background="@drawable/borderradius"
+            android:text="Annulla"
+            android:textColor="@color/colorDarkBlue"
+            android:layout_gravity="center"/>
+</LinearLayout>
